@@ -10,6 +10,7 @@ public class myAppTester {
 	  
 	  Scanner input = new Scanner(System.in);
 	  int n=0;
+	
 	  System.out.println("Hello Software Engineering World");
 	  System.out.println("Input your number and press enter: ");
 	  n = input.nextInt();
@@ -18,7 +19,9 @@ public class myAppTester {
 	  System.out.println();
 
 	  // add a line below to call your myTestMethod from here  then remove the block comment symbols  
-
+	  System.out.print("Reverse of the input number using while loop is:");
+	  myTestMethod(n);
+	  
 	}
 	
 	//This is a method to reverse the number by recursion
@@ -34,14 +37,20 @@ public class myAppTester {
 	   }
 
 
-	   /* 
-	       add your test method in this space then remove the block comment symbols
-	       public static void myTestMethod(...){
-
-            
-
-		   }
 	 
-	   */
+	    // reverse a number using while loop
+	       add your test method in this space then remove the block comment symbols
+	       public static void myTestMethod(int num){
+	    		int revnum = 0;
+				while(num !=0)
+				{
+				revnum = revnum * 10;
+				revnum = revnum + num%10;
+				num = num/10;
+		   }
+				
+				System.out.println(revnum);
+				   return;
+	
 
 }
